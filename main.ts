@@ -5,7 +5,7 @@
  * This program makes pixels go around perimeter
 */
 
-// variables
+// variables 
 let sprite: game.LedSprite = null
 let loopCounter = 0
 

@@ -2,7 +2,7 @@
  *
  * Created by: Tiago Baker
  * Created on: Oct 2025
- * This program makes pixels go around primeter
+ * This program makes pixels go around perimeter
 */
 
 // variables

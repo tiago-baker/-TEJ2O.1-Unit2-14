@@ -47,7 +47,7 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(500)
     }
 
-    // left side
+    // left side 
     loopCounter = 5
     while (loopCounter >= 0) {
         sprite.set(LedSpriteProperty.X, 0)

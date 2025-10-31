@@ -108,3 +108,4 @@ input.onButtonPressed(Button.B, function () {
     sprite.delete()
     basic.showIcon(IconNames.Happy)
 })
+

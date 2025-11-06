@@ -9,7 +9,7 @@
 let sprite: game.LedSprite = null
 let loopCounter = 0
 
-// setup
+// setup 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 basic.pause(500)

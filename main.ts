@@ -12,7 +12,6 @@ let loopCounter = 0
 // setup 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
-basic.pause(500)
 
 // when A is pressed, the pixels move
 input.onButtonPressed(Button.A, function () {
@@ -31,7 +30,7 @@ input.onButtonPressed(Button.A, function () {
 
     // right side
     loopCounter = 0
-    while (loopCounter <= 5) {
+    if (loopCounter <= 5) {
         sprite.set(LedSpriteProperty.X, 4)
         sprite.set(LedSpriteProperty.Y, loopCounter)
         loopCounter = loopCounter + 1
@@ -40,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
 
     // bottom
     loopCounter = 5
-    while (loopCounter >= 0) {
+    if (loopCounter >= 0) {
         sprite.set(LedSpriteProperty.X, loopCounter)
         sprite.set(LedSpriteProperty.Y, 4)
         loopCounter = loopCounter - 1
@@ -49,7 +48,7 @@ input.onButtonPressed(Button.A, function () {
 
     // left side 
     loopCounter = 5
-    while (loopCounter >= 0) {
+    if (loopCounter >= 0) {
         sprite.set(LedSpriteProperty.X, 0)
         sprite.set(LedSpriteProperty.Y, loopCounter)
         loopCounter = loopCounter - 1
@@ -67,7 +66,6 @@ input.onButtonPressed(Button.B, function () {
     loopCounter = 5
     sprite = game.createSprite(5, 5)
 
-
     // right side
     loopCounter = 4
     while (loopCounter >= 0) {
@@ -79,7 +77,7 @@ input.onButtonPressed(Button.B, function () {
 
     // top row
     loopCounter = 4
-    while (loopCounter >= 0) {
+    if (loopCounter >= 0) {
         sprite.set(LedSpriteProperty.X, loopCounter)
         sprite.set(LedSpriteProperty.Y, 0)
         loopCounter = loopCounter - 1
@@ -88,7 +86,7 @@ input.onButtonPressed(Button.B, function () {
 
     // left side
     loopCounter = 0
-    while (loopCounter <= 4) {
+    if (loopCounter <= 4) {
         sprite.set(LedSpriteProperty.X, 0)
         sprite.set(LedSpriteProperty.Y, loopCounter)
         loopCounter = loopCounter + 1
@@ -97,15 +95,13 @@ input.onButtonPressed(Button.B, function () {
 
     // botton
     loopCounter = 0
-    while (loopCounter <= 4) {
+    if (loopCounter <= 4) {
         sprite.set(LedSpriteProperty.X, loopCounter)
         sprite.set(LedSpriteProperty.Y, 4)
         loopCounter = loopCounter + 1
         basic.pause(500)
     }
 
-
     sprite.delete()
     basic.showIcon(IconNames.Happy)
 })
-
